@@ -9,10 +9,7 @@
 % the optimization.
 % output: grp_desc: a cell array length same as the input seq, each cell
 % has the subspace of size dxnum_subspaces. 
-% to classify the sequence use a grassmannian kenrel in mypdist2. that is,
-% mypdist2(X1, X2, 'grass'); and then use a kernel svm with -t 4.
 %
-% for questions, contact anoop.cherian@gmail.com
 %
 function [msvmp_fwd, msvmp_bwd] = msvmpool(input, Z, num_subspaces, thresh, num_iter, verbose)
 seq{1}=input;
